@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+
+		button:hover{
+			cursor: pointer;
+						
+		}
+                                                             
+           
+        
+		#output{
+			font-size: 25px;
+			text-align: right;
+
+			word-wrap: break-word;
+			width: 290px;
+
+
+		}
+	</style>
+
+	
+	<script type="text/javascript">
+		
+		// function appendToDisplay(value) {
+        //     document.getElementById('output').value += value;
+
+        // }
+    
+        // function clearDisplay(){
+        // 	document.getElementById('output').value = '';
+
+        // }
+        // function clearnumbers(value){
+        // 	document.getElementById('output').value 
+        // }
+        //  function cutLast() {
+        //     const output = document.getElementById('output');
+        //     output.value = output.value.slice(0, -1); // Remove the last character
+        // }
+
+
+        // function calculateResult() {
+        //     const expression = document.getElementById('output').value;
+        //     try {
+        //         const result = eval(expression);
+        //         document.getElementById('output').value = result;
+        //     } catch (error) {
+        //         document.getElementById('output').value = 'Error';
+        //     }
+        // }
+
+          let a = parseInt(prompt('enter the no to find even and odd'))
+
+           if (a/2==0) {
+           	 console.log('the number is even')
+           }
+           else {
+           	console.log('the number is odd')
+           }
+
+      
+       		
+	</script>
+        
+</head>
+<body>
+	<div style="height: 425px; width: 330px; border: 2px solid black; background-color: #1B1B1B ; text-align: center; margin-left: 550px;">
+
+<!-- input box -->
+      <input type="text"  style="height: 80px;  border: 1px solid black; margin: 10px 10px; margin-bottom: 10px; border-radius: 8px; background-color: green;
+      opacity: 60%; " id="output" >
+
+ <!-- button inbox -->
+	<button type="numbers" style="height:50px; width: 55px; background-color: #4E4FEB; color: black; border-radius: 100%; margin: 8px; font-size: 20px; font-weight: bold;" id="num1" onclick="appendToDisplay('1')">1</button>
+	<button type="numbers" style="height:50px; width: 55px; background-color: #4E4FEB ; color: black; border-radius: 100%; margin: 8px; font-size: 20px; font-weight: bold;" id="num2" onclick="appendToDisplay('2')">2</button>
+    <button type="numbers" style="height:50px; width: 55px; background-color: #4E4FEB; color: black; border-radius: 100%; margin: 8px;font-size: 20px; font-weight: bold;" id="num3" onclick="appendToDisplay('3')">3</button>
+    <button type="text" style="height:50px; width: 55px; background-color: #FF5E0E; color: black; border-radius: 100%; margin: 8px;font-size: 20px; font-weight: bold;" id="+ sign" class="operator" onclick="appendToDisplay('+')">+</button><br>
+
+ 	<button type="numbers" style="height:50px; width: 55px; background-color: #4E4FEB; color: black; border-radius: 100%; margin: 8px;font-size: 20px; font-weight: bold;" id="num4"onclick="appendToDisplay('4')">4</button>
+ 	<button type="numbers" style="height:50px; width: 55px; background-color: #4E4FEB; color: black; border-radius: 100%; margin: 8px;font-size: 20px; font-weight: bold;" id="num5"onclick="appendToDisplay('5')">5</button>
+ 	<button type="numbers" style="height:50px; width: 55px; background-color: #4E4FEB; color: black; border-radius: 100%; margin: 8px;font-size: 20px; font-weight: bold;" id="num6"onclick="appendToDisplay('6')">6</button>
+ 	<button type="text" style="height:50px; width: 55px; background-color: #FF5E0E; color: black; border-radius: 100%; margin: 8px;font-size: 20px; font-weight: bold;" id="- sign"class="operator" onclick="appendToDisplay('-')">-</button> <br>
+
+ 	<button type="numbers" style="height:50px; width: 55px; background-color: #4E4FEB; color: black; border-radius: 100%; margin: 8px;font-size: 20px; font-weight: bold;" id="num7"onclick="appendToDisplay('7')">7</button>
+ 	<button type="numbers" style="height:50px; width: 55px; background-color: #4E4FEB; color: black; border-radius: 100%; margin: 8px;font-size: 20px; font-weight: bold;" id="num8"onclick="appendToDisplay('8')">8</button>
+ 	<button type="numbers" style="height:50px; width: 55px; background-color: #4E4FEB; color: black; border-radius: 100%; margin: 8px;font-size: 20px; font-weight: bold;" id="num9"onclick="appendToDisplay('9')">9</button>
+ 	<button type="text" style="height:50px; width: 55px; background-color: #FF5E0E; color: black; border-radius: 100%; margin: 8px;font-size: 20px; font-weight: bold;" id="* sign"class="operator" onclick="appendToDisplay('*')">*</button><br>
+
+	<button type="text" style="height:50px; width: 55px; background-color: lightgrey; color: black; border-radius: 100%; margin: 8px;font-size: 20px; font-weight: bold;" id="X sign" onclick="cutLast()"> x </button>
+	<button type="numbers" style="height:50px; width: 55px; background-color: #4E4FEB; color: black; border-radius: 100%; margin: 8px;font-size: 20px; font-weight: bold;" id="num0"onclick="appendToDisplay('0')">0</button>
+	<button type="text" style="height:50px; width: 55px; background-color: lightgrey; color: black; border-radius: 100%; margin: 8px;font-size: 20px; font-weight: bold;" id="% sign"class="operator" onclick="appendToDisplay('/')">/</button>
+	<button type="text" style="height:50px; width: 55px; background-color: #FF5E0E; color: black; border-radius: 100%; margin: 8px;font-size: 20px; font-weight: bold;" id="= sign" onclick="calculateResult()">=</button>
+	<br>
+	<button type="numbers" style="height:45px; width: 95px; background-color: #FF5E0E; color: black; border-radius: 20px; margin-top: 10px;"  onclick="clearDisplay()"  >CLEAR</button>
+		
+</div>
+
+    
+
+</body>
+</html>
