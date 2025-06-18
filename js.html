@@ -28,33 +28,33 @@
 	
 	<script type="text/javascript">
 		
-		// function appendToDisplay(value) {
-        //     document.getElementById('output').value += value;
+		function appendToDisplay(value) {
+            document.getElementById('output').value += value;
 
-        // }
+        }
     
-        // function clearDisplay(){
-        // 	document.getElementById('output').value = '';
+        function clearDisplay(){
+        	document.getElementById('output').value = '';
 
-        // }
-        // function clearnumbers(value){
-        // 	document.getElementById('output').value 
-        // }
-        //  function cutLast() {
-        //     const output = document.getElementById('output');
-        //     output.value = output.value.slice(0, -1); // Remove the last character
-        // }
+        }
+        function clearnumbers(value){
+        	document.getElementById('output').value 
+        }
+         function cutLast() {
+            const output = document.getElementById('output');
+            output.value = output.value.slice(0, -1); // Remove the last character
+        }
 
 
-        // function calculateResult() {
-        //     const expression = document.getElementById('output').value;
-        //     try {
-        //         const result = eval(expression);
-        //         document.getElementById('output').value = result;
-        //     } catch (error) {
-        //         document.getElementById('output').value = 'Error';
-        //     }
-        // }
+        function calculateResult() {
+            const expression = document.getElementById('output').value;
+            try {
+                const result = eval(expression);
+                document.getElementById('output').value = result;
+            } catch (error) {
+                document.getElementById('output').value = 'Error';
+            }
+        }
 
           let a = parseInt(prompt('enter the no to find even and odd'))
 
